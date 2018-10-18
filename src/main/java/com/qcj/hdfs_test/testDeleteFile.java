@@ -17,7 +17,7 @@ public class testDeleteFile {
         Configuration config = new Configuration();
         //fs
         FileSystem fs = FileSystem.get(new URI("hdfs://hadoop1:9000"),config,"hadoop1");
-        Path path = new Path("/ip");
+        Path path = new Path("/");
         deleteFile(fs,path);//调用递归删除
     }
 
